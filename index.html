@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Inventory</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; background: #fff; border-bottom: 2px solid #eaeaea; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; color: #222; }
+        .inventory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .brand-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .brand-card:hover { transform: translateY(-5px); }
+        .brand-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; background: #eee; }
+        .brand-title { font-size: 1.5em; margin: 10px 0; color: #000; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px thin #f0f0f0; font-size: 0.95em; }
+        .shipping-badge { display: inline-block; background: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cologne & Perfume Inventory</h1>
+    <p>Premium Fragrance Collection</p>
+</header>
+
+<div class="inventory-grid">
+    <div class="brand-card">
+        <img src="images/dior.png" alt="Dior Collection">
+        <div class="shipping-badge">3-5 Days Shipping</div>
+        <div class="brand-title">Dior</div>
+        <ul>
+            <li>Dior Sauvage & Elixir</li>
+            <li>Dior Miss Dior</li>
+        </ul>
+    </div>
+
+    <div class="brand-card">
+        <img src="images/tom-ford.png" alt="Tom Ford Collection">
+        <div class="shipping-badge">3-5 Days Shipping</div>
+        <div class="brand-title">Tom Ford</div>
+        <ul>
+            <li>Soleil Blanc, Lost Cherry, White Suede</li>
+            <li>Black Orchid, Oud Wood, Bitter Peach</li>
+            <li>Tobacco Oud, Ombré Leather, Black Lacquer</li>
+        </ul>
+    </div>
+
+    <div class="brand-card">
+        <img src="images/ysl.png" alt="YSL Collection">
+        <div class="shipping-badge">3-5 Days Shipping</div>
+        <div class="brand-title">YSL</div>
+        <ul>
+            <li>Black Opium, Myself & Myself (Le Parfum)</li>
+            <li>Y (EDP Intense, EDP, EDT)</li>
+            <li>Libre & Libre Intense</li>
+        </ul>
+    </div>
+
+    <div class="brand-card">
+        <img src="images/pdm.png" alt="PDM Collection">
+        <div class="shipping-badge">3-5 Days Shipping</div>
+        <div class="brand-title">Parfums De Marly</div>
+        <ul>
+            <li>Delina La Rose, Althair, Layton</li>
+            <li>Okiana, Pegasus, Greenley</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
